@@ -43,6 +43,16 @@ Outras possibilidades resultantes deste estudo são:
 * Pareamento de agentes para maior efetividade da recomendação, i.e., parear de forma ótima influenciadores e recomendados e não só ítens para recomendados;
 * Pareamento de agentes para maior efetividade do recomendado, i.e., parear de forma ótima itens recomendados por influenciadores, de forma a explorar o prestígio de quem recomenda determinado ítem.
 
+### ALGORÍTMO DE GALE-SHAPLEY
+
+1. Assinalar para cada consumidor “k” que existem em “K” e provedor “p” que existem em “P” como não pareado;
+1. Pegar um “k” não pareado, e que “p” esteja no topo da lista de preferências de “k”:
+    1. Se “p” não estiver pareado, registrar “M(k) = P”;
+    1. Se “p” estiver pareado:
+    1. Se “p” prefere “k” a “M-1(k)” então registrar “M(k) = p”;
+    1. Senão “k” permanece não pareado e remove “p” da lista de preferências;
+1. Repetir 2 até que todo “k” tenha sido pareado.
+
 ## REFERÊNCIAS
 
 1. Gale, David, and Lloyd S. Shapley. "College admissions and the stability of marriage." The American Mathematical Monthly 69.1 (1962): 9-15.
