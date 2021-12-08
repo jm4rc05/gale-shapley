@@ -45,13 +45,15 @@ Outras possibilidades resultantes deste estudo são:
 
 ### ALGORÍTMO DE GALE-SHAPLEY
 
-1. Assinalar para cada consumidor “k” que existem em “K” e provedor “p” que existem em “P” como não pareado;
-1. Pegar um “k” não pareado, e que “p” esteja no topo da lista de preferências de “k”:
-    1. Se “p” não estiver pareado, registrar “M(k) = P”;
-    1. Se “p” estiver pareado:
-    1. Se “p” prefere “k” a “M-1(k)” então registrar “M(k) = p”;
-    1. Senão “k” permanece não pareado e remove “p” da lista de preferências;
-1. Repetir 2 até que todo “k” tenha sido pareado.
+1. Assinalar para cada consumidor $k$ que existem em $K$ e provedor $p$ que existem em $P$ como não pareado;
+1. Pegar um $k$ não pareado, e que $p$ esteja no topo da lista de preferências de $k$:
+    1. Se $p$ não estiver pareado, registrar $M(k) = P$;
+    1. Se $p$ estiver pareado:
+    1. Se $p$ prefere $k$ a $M-1(k)$ então registrar $M(k) = p$;
+    1. Senão $k$ permanece não pareado e remove $p$ da lista de preferências.
+1. Repetir 2 até que todo $k$ tenha sido pareado.
+
+É fácil observar que este algorítmo é $\omicron(n^2)$.
 
 ## REFERÊNCIAS
 
