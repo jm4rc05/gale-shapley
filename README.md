@@ -55,6 +55,8 @@ Outras possibilidades resultantes deste estudo são:
 
 É fácil observar que este algorítmo é $O(n \cdot m)$.
 
+Uma demonstração do algoritmo pode ser observada vista em https://gitlab.com/stamps-group/gale-shapley/-/blob/master/simul.ipynb.
+
 ## REFERÊNCIAS
 
 1. Gale, David, and Lloyd S. Shapley. "College admissions and the stability of marriage." The American Mathematical Monthly 69.1 (1962): 9-15.
