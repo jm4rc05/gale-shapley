@@ -53,7 +53,7 @@ Outras possibilidades resultantes deste estudo são:
     1. Senão $k$ permanece não pareado e remove $p$ da lista de preferências.
 1. Repetir 2 até que todo $k$ tenha sido pareado.
 
-É fácil observar que este algorítmo é $\omicron(n^2)$.
+É fácil observar que este algorítmo é $\Omicron(n^2)$.
 
 ## REFERÊNCIAS
 
