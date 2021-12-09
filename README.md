@@ -43,7 +43,7 @@ Outras possibilidades resultantes deste estudo são:
 * Pareamento de agentes para maior efetividade da recomendação, i.e., parear de forma ótima influenciadores e recomendados e não só ítens para recomendados;
 * Pareamento de agentes para maior efetividade do recomendado, i.e., parear de forma ótima itens recomendados por influenciadores, de forma a explorar o prestígio de quem recomenda determinado ítem.
 
-### ALGORÍTMO DE GALE-SHAPLEY
+### ALGORITMO DE GALE-SHAPLEY
 
 1. Assinalar para cada consumidor $k$ que existem em $K$ e provedor $p$ que existem em $P$ como não pareado;
 1. Pegar um $k$ não pareado, e que $p$ esteja no topo da lista de preferências de $k$:
