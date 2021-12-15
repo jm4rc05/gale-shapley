@@ -57,6 +57,10 @@ Outras possibilidades resultantes deste estudo são:
 
 Uma demonstração do algoritmo pode ser observada vista em https://gitlab.com/stamps-group/gale-shapley/-/blob/master/simul.ipynb.
 
+## PROBLEMAS DESTA ABORDAGEM
+
+Podemos adiantar que esta abordagem não atende de forma realística o problema que nos propomos a resolver, pois as escolhas de pareamento de influenciadores por comerciantes e de produtos para influenciadores são relações n x 1, enquanto que a abordagem proposta ainda é 1 x 1. Este é um problema que deverá ser atacado num desenvolvimento futuro deste trabalho.
+
 ## REFERÊNCIAS
 
 1. Gale, David, and Lloyd S. Shapley. "College admissions and the stability of marriage." The American Mathematical Monthly 69.1 (1962): 9-15.
