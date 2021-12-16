@@ -61,7 +61,7 @@ Uma demonstração do algoritmo pode ser observada vista em https://gitlab.com/s
 
 Podemos adiantar que esta abordagem não atende de forma realística o problema que nos propomos a resolver, pois as escolhas de pareamento de influenciadores por comerciantes e de produtos para influenciadores são relações _n x 1_, enquanto que a abordagem proposta ainda é _1 x 1_. Este é um problema que deverá ser atacado num desenvolvimento futuro deste trabalho.
 
-E ainda nesta linha de raciocínio, o problema se extende para relações _n x m_, onde por exemplo, tanto comerciantes quanto produtos podem ser atendidos por diversos influenciadores, quanto o mesmo influenciador pode atender diversos comerciantes e produtos.
+E ainda nesta linha de raciocínio, o problema se extende para relações _n x m_, onde por exemplo, tanto comerciantes quanto produtos podem ser atendidos por diversos influenciadores, ou o mesmo influenciador pode atender diversos comerciantes e produtos.
 
 ## REFERÊNCIAS
 
