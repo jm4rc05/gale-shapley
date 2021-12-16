@@ -33,7 +33,7 @@ E finalmente, enquadramos o sistema de recomendações como um jogo cíclico, on
 
 A Teoria dos Jogos tem um importante papel em sistemas de inteligência artificial, como por exemplo os que aplicam aprendizado por reforço,
 
-Neste trabalho propomos utilizar a técnica de Agrupamento de Agentes da Teoria dos Jogos com objetivos diversos objetivos:
+Neste trabalho propomos utilizar a técnica de Agrupamento de Agentes da Teoria dos Jogos com diversos objetivos:
 
 * Otimizar as heurísticas de agrupamento da abordagem Content-based de modo a melhorar a qualidade das recomendações produzidas; ou
 * Otimizar a eficiência computacional da abordagem Collaborative-filtering classificando os agentes em seus grupos.
@@ -45,21 +45,23 @@ Outras possibilidades resultantes deste estudo são:
 
 ### ALGORITMO DE GALE-SHAPLEY
 
-1. Assinalar para cada consumidor $k$ que existem em $K$ e provedor $p$ que existem em $P$ como não pareado;
-1. Pegar um $k$ não pareado, e que $p$ esteja no topo da lista de preferências de $k$:
-    1. Se $p$ não estiver pareado, registrar $M(k) = P$;
-    1. Se $p$ estiver pareado:
-    1. Se $p$ prefere $k$ a $M-1(k)$ então registrar $M(k) = p$;
-    1. Senão $k$ permanece não pareado e remove $p$ da lista de preferências.
-1. Repetir 2 até que todo $k$ tenha sido pareado.
+1. Assinalar para cada consumidor _k_ que existem em _K_ e provedor _p_ que existem em _P_ como não pareado;
+1. Pegar um _k_ não pareado, e que _p_ esteja no topo da lista de preferências de _k_:
+    1. Se _p_ não estiver pareado, registrar _M(k) = P_;
+    1. Se _p_ estiver pareado:
+    1. Se _p_ prefere _k_ a _M-1(k)_ então registrar _M(k) = p_;
+    1. Senão _k_ permanece não pareado e remove _p_ da lista de preferências.
+1. Repetir 2 até que todo _k_ tenha sido pareado.
 
-É fácil observar que este algorítmo é $O(n \cdot m)$.
+É fácil observar que este algorítmo é _O(n . m)_.
 
 Uma demonstração do algoritmo pode ser observada vista em https://gitlab.com/stamps-group/gale-shapley/-/blob/master/simul.ipynb.
 
 ## PROBLEMAS DESTA ABORDAGEM
 
-Podemos adiantar que esta abordagem não atende de forma realística o problema que nos propomos a resolver, pois as escolhas de pareamento de influenciadores por comerciantes e de produtos para influenciadores são relações n x 1, enquanto que a abordagem proposta ainda é 1 x 1. Este é um problema que deverá ser atacado num desenvolvimento futuro deste trabalho.
+Podemos adiantar que esta abordagem não atende de forma realística o problema que nos propomos a resolver, pois as escolhas de pareamento de influenciadores por comerciantes e de produtos para influenciadores são relações _n x 1_, enquanto que a abordagem proposta ainda é _1 x 1_. Este é um problema que deverá ser atacado num desenvolvimento futuro deste trabalho.
+
+E ainda nesta linha de raciocínio, o problema se extende para relações _n x m_, onde por exemplo, tanto comerciantes quanto produtos podem ser atendidos por diversos influenciadores, quanto o mesmo influenciador pode atender diversos comerciantes e produtos.
 
 ## REFERÊNCIAS
 
